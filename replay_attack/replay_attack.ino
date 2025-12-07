@@ -1,10 +1,11 @@
 #include "config.h"
 #include "webPage.h"
+
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WebServer.h>
 
-const int pinLed = 24; //A7
+const int pinLed = <pin>;
 WebServer server(80);
 
 void handleRoot() {
