@@ -31,13 +31,10 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 - Dependencias específicas: `WiFi.h`
 - Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor del pin al que se conecte el LED.
 
-
 ## ftp
-- Descripción: [Indica si se realiza conexión FTP, subida/descarga de archivos, autenticación, etc.]
-- Dependencias específicas: …
-- Configuración necesaria: [Servidor FTP, credenciales, puertos]
-- Pasos de ejecución: …
-- Resultados esperados: …
+- Descripción: Con este código, Arduino se conecta al servidor FTP y se descarga el archivo indicado. A lo largo de la ejecución se muestra por el serial el estado de la conexión y el contenido del archivo.
+- Dependencias específicas: `WiFi.h` y `FTPduino.h`
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor de todas las variables del FTP como usuario, contraseá, puerto, archivo, etc.
 
 ## mqtt
 - Descripción: [Publicación/suscripción MQTT, tópicos, QoS, broker utilizado]
