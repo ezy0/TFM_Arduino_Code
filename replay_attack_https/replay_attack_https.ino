@@ -11,7 +11,7 @@
 
 using namespace httpsserver;
 
-const int pinLed = 24;
+const int pinLed = <pin>;
 SSLCert *cert;
 HTTPSServer *secureServer;
 
