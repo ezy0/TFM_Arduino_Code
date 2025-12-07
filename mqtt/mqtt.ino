@@ -2,11 +2,11 @@
 #include <PubSubClient.h>
 #include "config.h"
 
-const char* mqtt_server = "192.168.1.82";
-const char* mqtt_user = "arduino";
-const char* mqtt_password = "super_secure42";
+const char* mqtt_server = "<server_ip>";
+const char* mqtt_user = "<user>";
+const char* mqtt_password = "<pass>";
 
-const int pinFotoresistor = 17; //A0
+const int pinFotoresistor = <pin>;
 unsigned long tiempoAnterior = 0;
 
 WiFiClient espClient;
