@@ -6,6 +6,7 @@ const char* mqtt_server = "<server_ip>";
 const char* mqtt_port = "<server_port>";
 const char* mqtt_user = "<user>";
 const char* mqtt_password = "<pass>";
+const char* mqtt_topic = "<mqtt_topic>";
 
 const int pinFotoresistor = <pin>;
 unsigned long tiempoAnterior = 0;
@@ -58,7 +59,7 @@ void loop() {
     int value = analogRead(pinFotoresistor);
     
     String message = String(value);
-    client.publish("iot/arduino/fotoresistor", message.c_str());
+    client.publish(mqtt_topic, message.c_str());
   }
 
 }
