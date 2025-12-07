@@ -34,22 +34,17 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 ## ftp
 - Descripción: Con este código, Arduino se conecta al servidor FTP y se descarga el archivo indicado. A lo largo de la ejecución se muestra por el serial el estado de la conexión y el contenido del archivo.
 - Dependencias específicas: `WiFi.h` y `FTPduino.h`
-- Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor de todas las variables del FTP como usuario, contraseá, puerto, archivo, etc.
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor de todas las variables del FTP como usuario, contraseña, puerto, archivo, etc.
 
 ## mqtt
-- Descripción: [Publicación/suscripción MQTT, tópicos, QoS, broker utilizado]
-- Dependencias específicas: [Librería MQTT, por ejemplo PubSubClient]
-- Configuración necesaria: [Host, puerto, topics, credenciales si aplica]
-- Pasos de ejecución: …
-- Resultados esperados: …
+- Descripción: En este código Arduino manda cada 3 segundos la información que recibe de un fotoresistor a un servidor MQTT.
+- Dependencias específicas: `WiFi.h` y `PubSubClient.h`
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h`, el valor del pin del fotoresistor y las variables MQTT.
 
 ## mqtt_mtls
-- Descripción: [Conexión MQTT con mTLS (mutual TLS), intercambio de certificados, autenticación de cliente]
-- Dependencias específicas: [Soporte TLS, ubicación de certificados CA, cliente y clave privada]
-- Configuración necesaria: [Ruta/almacenamiento de certs, host seguro, puerto TLS]
-- Pasos de ejecución: …
-- Verificación: [Cómo comprobar el establecimiento mTLS y logs]
-- Resultados esperados: …
+- Descripción: En este código Arduino manda cada 3 segundos la información que recibe de un fotoresistor a un servidor MQTT en el que se ha autenticado mediante MTLS.
+- Dependencias específicas: `WiFi.h`, `PubSubClient.h` y `WiFiClientSecure.h`
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h`, el valor del pin del fotoresistor, las variables MQTT y los certificados de la CA (`ca_cert.h`) y cliente (`cert.h`), junto con su clave privada (`private_key.h`).
 
 ## replay_attack
 - Descripción: [Escenario de ataque de repetición en protocolos sin cifrado/nonce]
