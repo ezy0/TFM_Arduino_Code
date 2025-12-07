@@ -5,14 +5,13 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 
 ## Índice
 - [Configuración y compilación](#configuración-y-compilación)
-- [ap](#ap)
+- [sta](#sta)
 - [ddos_http](#ddos_http)
 - [ftp](#ftp)
 - [mqtt](#mqtt)
 - [mqtt_mtls](#mqtt_mtls)
 - [replay_attack](#replay_attack)
 - [replay_attack_https](#replay_attack_https)
-- [sta](#sta)
 
 ## Configuración y compilación
 1. Instala Arduino IDE (o `arduino-cli`).
@@ -22,12 +21,10 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 6. Ajusta los parámetros que hagan falta, como las credenciales del WiFi en `config.h`, variables, etc.
 8. Compila y sube el código para ejecutarlo.
 
-## ap
-- Descripción: [Escribe aquí qué hace el código de la carpeta `ap` (por ejemplo, modo punto de acceso, autenticación, pruebas de conectividad, etc.)]
-- Dependencias específicas: …
-- Configuración necesaria: …
-- Pasos de ejecución: …
-- Resultados esperados: …
+## sta
+- Descripción: Código del escenario de ejemplo en el que Arduino funciona en modo Station. En este código, Arduino se conectará a un punto de acceso WiFi y realizará pings al host que se le indique.
+- Dependencias específicas: `WiFi.h` y `ESPping.h`
+- Configuración necesaria: Modificar las credenciales de acceso del punto WiFi en el archivo `config.h`
 
 ## ddos_http
 - Descripción: [Explica el objetivo de `ddos_http` (por ejemplo, simulación/estudio de patrones de tráfico, pruebas de resiliencia, etc.)]
@@ -73,10 +70,3 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 - Configuración necesaria: …
 - Pasos de ejecución: …
 - Observaciones: [Uso de TLS, timestamps, nonces, sequence numbers]
-
-## sta
-- Descripción: [Modo estación (STA): conexión a AP, obtención de IP, pruebas de latencia/throughput]
-- Dependencias específicas: …
-- Configuración necesaria: [SSID, contraseña, parámetros de red]
-- Pasos de ejecución: …
-- Resultados esperados: …
