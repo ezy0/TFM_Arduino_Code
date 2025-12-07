@@ -3,6 +3,7 @@
 #include "config.h"
 
 const char* mqtt_server = "<server_ip>";
+const char* mqtt_port = "<server_port>";
 const char* mqtt_user = "<user>";
 const char* mqtt_password = "<pass>";
 
@@ -40,7 +41,7 @@ void setup() {
   delay(2000);
   connect();
 
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, mqtt_port);
   reconnect(); 
 }
 
