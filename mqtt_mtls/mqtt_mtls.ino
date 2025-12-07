@@ -7,9 +7,10 @@
 #include "private_key.h"
 #include "ca_cert.h"
 
-const char* mqtt_server = "192.168.1.82";
+const char* mqtt_server = "<server_ip>";
+const char* mqtt_port = "<server_port>";
 
-const int pinFotoresistor = 17; //A0
+const int pinFotoresistor = <pin>;
 unsigned long tiempoAnterior = 0;
 
 WiFiClientSecure espClient;
@@ -47,7 +48,7 @@ void setup() {
   espClient.setCertificate(client_cert);
   espClient.setPrivateKey(client_key);
 
-  client.setServer(mqtt_server, 8883);
+  client.setServer(mqtt_server, mqtt_port);
   reconnect(); 
 }
 
