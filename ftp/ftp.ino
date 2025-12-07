@@ -5,12 +5,12 @@
 
 FTPduino ftp;
 
-const char serverIP[] = "192.168.1.82";
-const int FTPport = 21;
-const char ftp_user[] = "ftp";
-const char ftp_pass[] = "ftp";
-const char work_dir[] = "/"; // Directorio del archivo
-const char file_name[] = "ftp.txt"; // Nombre del archivo
+const char serverIP[] = "<ip_server>";
+const int FTPport = <puerto>;
+const char ftp_user[] = "<user>";
+const char ftp_pass[] = "<pass>";
+const char work_dir[] = "<dir_name>";
+const char file_name[] = "<filename>";
 
 void connect() {
   WiFi.mode(WIFI_STA);
