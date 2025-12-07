@@ -2,7 +2,7 @@
 #include "webPage.h"
 #include <WiFi.h>
 
-const int pinLed = 24;
+const int pinLed = <pin>;
 WiFiServer server(80);
 
 #define MAX_REQUESTS_PER_SECOND 5
