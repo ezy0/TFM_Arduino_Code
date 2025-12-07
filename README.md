@@ -27,12 +27,10 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 - Configuración necesaria: Modificar las credenciales de acceso del punto WiFi en el archivo `config.h`
 
 ## ddos_http
-- Descripción: [Explica el objetivo de `ddos_http` (por ejemplo, simulación/estudio de patrones de tráfico, pruebas de resiliencia, etc.)]
-- Advertencias éticas/legales: [Asegúrate de remarcar que cualquier prueba debe hacerse en entornos controlados y con permiso]
-- Dependencias específicas: …
-- Configuración necesaria: …
-- Pasos de ejecución: …
-- Métricas/observaciones: …
+- Descripción: Servidor HTTP que levanta Arduino, en el que permite al usuario encender y apagar un LED conectado a la placa mediante un frontal web. Además, el código hace un recuento de conexiones activas para limitarlas y cerrar conexiones que intenten denegar los servicios atacando a la capa de aplicación.
+- Dependencias específicas: `WiFi.h`
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor del pin al que se conecte el LED.
+
 
 ## ftp
 - Descripción: [Indica si se realiza conexión FTP, subida/descarga de archivos, autenticación, etc.]
