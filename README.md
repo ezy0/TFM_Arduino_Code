@@ -49,7 +49,7 @@ Cada carpeta incluye el código del sketch y los archivos que necesita para su e
 ## replay_attack
 - Descripción: Servidor web (HTTP) que permite al usuario encender y apagar un LED conectado al Arduino.
 - Dependencias específicas: `WiFi.h`, `HTTPClient.h` y `WebServer.h`
-- Configuración necesaria: Modificar las credenciales de acceso en `config.h`, el valor del pin del LED.
+- Configuración necesaria: Modificar las credenciales de acceso en `config.h` y el valor del pin del LED.
 
 ## replay_attack_https
 - Descripción: Servidor web (HTTPS) que permite al usuario encender y apagar un LED conectado al Arduino.
